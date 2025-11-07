@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <NoWarn>$(NoWarn);1591</NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Shared.Application\Shared.Application.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Autofac" Version="6.3.0" />
+        <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.7.0" />
+        <PackageReference Include="AWSSDK.S3" Version="3.7.8.19" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.4" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.4" />
+        <PackageReference Include="Ardalis.Specification.EntityFrameworkCore" Version="6.0.1" />
+        <PackageReference Include="Polly" Version="7.2.3" />
+        <PackageReference Include="RabbitMQ.Client" Version="6.2.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Bus\" />
+      <Folder Include="Services\" />
+    </ItemGroup>
+    
+</Project>

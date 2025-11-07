@@ -1,0 +1,1 @@
+global using Backend.Domain.Entities;
